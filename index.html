@@ -6,6 +6,11 @@
     <title>Donausoft - Where Focus Meets Future</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
         .hero {
             background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
             background-size: cover;
@@ -25,6 +30,10 @@
         }
         section {
             padding: 60px 0;
+        }
+        .section-title {
+            margin-bottom: 40px;
+            text-align: center;
         }
         footer {
             background-color: #333;
@@ -58,6 +67,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#market">Opportunities</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partnerships">Partnerships</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -72,8 +84,10 @@
 
     <div class="container">
         <section id="projects">
-            <h2>Experience with Project Management Cloud-Based Solutions</h2>
-            <p>Leading projects from conception to execution, ensuring solutions exceed client expectations and improve productivity.</p>
+            <div class="section-title">
+                <h2>Experience with Project Management Cloud-Based Solutions</h2>
+                <p>Leading projects from conception to execution, ensuring solutions exceed client expectations and improve productivity.</p>
+            </div>
             <ul>
                 <li>Implementation of Confluence and Jira for improved project management.</li>
                 <li>ERP system interface programming for streamlined inventory and customer management.</li>
@@ -81,16 +95,18 @@
             </ul>
         </section>
 
-        <section id="clients">
-            <h2>Featured Clients and Technical Projects</h2>
+        <section id="clients" class="bg-light">
+            <div class="section-title">
+                <h2>Featured Clients and Technical Projects</h2>
+            </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Project Image" class="img-fluid">
+                    <img src="https://via.placeholder.com/600x400" alt="Project Image" class="img-fluid mb-3">
                     <h3>Driving Schools Platform</h3>
                     <p>Comprehensive platform development using Kotlin, TypeScript, and containerization.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="https://via.placeholder.com/600x400" alt="Project Image" class="img-fluid">
+                    <img src="https://via.placeholder.com/600x400" alt="Project Image" class="img-fluid mb-3">
                     <h3>Digital Receptionist for Hospitality</h3>
                     <p>Development of a 3D avatar digital receptionist, enhancing guest experiences using AI technologies.</p>
                 </div>
@@ -98,34 +114,40 @@
         </section>
 
         <section id="team">
-            <h2>Team Structure and Size</h2>
+            <div class="section-title">
+                <h2>Team Structure and Size</h2>
+            </div>
             <p>Dynamic and flexible team of freelancers, leveraging Agile methodology to respond swiftly to project needs and scale efficiently.</p>
         </section>
 
-        <section id="geo">
-            <h2>Geographical Presence</h2>
-            <p>Centered in Austria, focusing on the diverse industrial landscape of Upper Austria and the dynamic market of Salzburg
-				.</p>
-			</section>
-	
-			<section id="market">
-				<h2>Market Opportunity</h2>
-				<p>We target diverse sectors in Upper Austria, including manufacturing, SMEs, technology, education, tourism, and healthcare. Each sector presents significant opportunities for implementing scalable, cost-effective software solutions to enhance operational efficiency and drive growth.</p>
-			</section>
-	
-			<section id="partnerships">
-				<h2>Strategic Partnerships</h2>
-				<p>Currently, we do not have established channels or strategic partnerships. Recognizing their importance, we aim to align with partners that share our innovative spirit and capabilities, enhancing our market presence and service offerings.</p>
-			</section>
-		</div>
-	
-		<footer>
-			<p>&copy; 2024 Donausoft. All Rights Reserved.</p>
-		</footer>
-	
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
-	</body>
-	</html>
-	
+        <section id="geo" class="bg-light">
+            <div class="section-title">
+                <h2>Geographical Presence</h2>
+            </div>
+            <p>Centered in Austria, focusing on the diverse industrial landscape of Upper Austria and the dynamic market of Salzburg.</p>
+        </section>
+
+        <section id="market">
+            <div class="section-title">
+                <h2>Market Opportunity</h2>
+            </div>
+            <p>We target diverse sectors in Upper Austria, including manufacturing, SMEs, technology, education, tourism, and healthcare. Each sector presents significant opportunities for implementing scalable, cost-effective software solutions to enhance operational efficiency and drive growth.</p>
+        </section>
+
+        <section id="partnerships" class="bg-light">
+            <div class="section-title">
+                <h2>Strategic Partnerships</h2>
+            </div>
+            <p>Currently, we do not have established channels or strategic partnerships. Recognizing their importance, we aim to align with partners that share our innovative spirit and capabilities, enhancing our market presence and service offerings.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Donausoft. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+</html>
