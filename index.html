@@ -4,119 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donausoft - Where Focus Meets Future</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
+        .navbar {
+            margin-bottom: 20px;
         }
-        .container {
-            width: 80%;
-            margin: 2rem auto;
+        .section {
+            padding: 60px 0;
         }
-        h1, h2 {
-            color: #333;
-        }
-        .project, .client, .team, .geo, .market {
-            background: #fff;
-            margin: 1rem 0;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Donausoft</h1>
-        <p>Where Focus Meets Future</p>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Donausoft</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clients">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#geo">Geographical Presence</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#market">Market Opportunity</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <section class="projects">
+        <section id="projects" class="section">
             <h2>Project Management Solutions</h2>
-            <div class="project">
-                <h3>Schramm TechTrade</h3>
-                <p><strong>Description:</strong> Implementation of Confluence and Jira for technical trade solutions.</p>
-                <p><strong>Role:</strong> Product Owner</p>
-                <p><a href="https://www.schramm-techtrade.com/">Website - Schramm TechTrade</a></p>
-            </div>
-            <div class="project">
-                <h3>Mühlviertler Holzladen</h3>
-                <p><strong>Description:</strong> Interface Programming for Vendoc ERP for wood products business.</p>
-                <p><strong>Role:</strong> Product Owner</p>
-                <p><a href="https://www.m4tler-holzladen.at/">Website - Mühlviertler Holzladen</a></p>
-            </div>
-            <div class="project">
-                <h3>pro Promo</h3>
-                <p><strong>Description:</strong> Research Project for promotional and marketing services.</p>
-                <p><strong>Role:</strong> Product Owner</p>
-                
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Schramm TechTrade</h3>
+                    <p><strong>Description:</strong> Implementation of Confluence and Jira for technical trade solutions.</p>
+                    <p><strong>Role:</strong> Product Owner</p>
+                    <p><a href="https://www.schramm-techtrade.com/" class="btn btn-primary">Website</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Mühlviertler Holzladen</h3>
+                    <p><strong>Description:</strong> Interface Programming for Vendoc ERP for wood products business.</p>
+                    <p><strong>Role:</strong> Product Owner</p>
+                    <p><a href="https://www.m4tler-holzladen.at/" class="btn btn-primary">Website</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h3>proPromo</h3>
+                    <p><strong>Description:</strong> Research Project for promotional and marketing services.</p>
+                    <p><strong>Role:</strong> Product Owner</p>
+                    <p><a href="https://propromo.duckdns.org/" class="btn btn-primary">Website</a></p>
+                </div>
             </div>
         </section>
-        
-        <section class="clients">
+
+        <section id="clients" class="section bg-light">
             <h2>Featured Clients and Technical Projects</h2>
-            <div class="client">
-                <h3>Project CT-Online</h3>
-                <p><strong>Client:</strong> Multiple driving schools in Upper Austria.</p>
-                <p><strong>Description:</strong> Platform for driving schools and students to manage exam preparation, appointments, and communication.</p>
-                <p><strong>Programming Languages and Concepts:</strong> Kotlin, TypeScript, Containerization.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Project CT-Online</h3>
+                    <p><strong>Client:</strong> Multiple driving schools in Upper Austria.</p>
+                    <p><strong>Description:</strong> Platform for driving schools and students to manage exam preparation, appointments, and communication.</p>
+                    <p><strong>Programming Languages and Concepts:</strong> Kotlin, TypeScript, Containerization.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Project Rezep</h3>
+                    <p><strong>Client:</strong> Hotels and hospitality businesses in Salzburg.</p>
+                    <p><strong>Description:</strong> Digital receptionist in the form of a 3D avatar interacting with customers using LLMs.</p>
+                    <p><strong>Programming Languages and Concepts:</strong> JavaScript, C#, AI API, Containerization.</p>
+                </div>
             </div>
-            <div class="client">
-                <h3>Project Rezep</h3>
-                <p><strong>Client:</strong> Hotels and hospitality businesses in Salzburg.</p>
-                <p><strong>Description:</strong> Digital receptionist in the form of a 3D avatar interacting with customers using LLMs.</p>
-                <p><strong>Programming Languages and Concepts:</strong> JavaScript, C#, AI API, Containerization.</p>
-            </div>
-            <div class="client">
-                <h3>Project Phenix</h3>
-                <p><strong>Client:</strong> Tech startups and SMEs in Upper Austria.</p>
-                <p><strong>Description:</strong> Decentralized platform for businesses to manage their own cloud service.</p>
-                <p><strong>Programming Languages and Concepts:</strong> C#, TypeScript, Containerization.</p>
-            </div>
-            <div class="client">
-                <h3>Digital School Register</h3>
-                <p><strong>Client:</strong> Educational institutions in Upper Austria.</p>
-                <p><strong>Description:</strong> Web application for admission applications to higher schools, including administration and assignment.</p>
-                <p><strong>Programming Languages and Concepts:</strong> Java, Quarkus, Kubernetes.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Project Phenix</h3>
+                    <p><strong>Client:</strong> Tech startups and SMEs in Upper Austria.</p>
+                    <p><strong>Description:</strong> Decentralized platform for businesses to manage their own cloud service.</p>
+                    <p><strong>Programming Languages and Concepts:</strong> C#, TypeScript, Containerization.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Digital School Register</h3>
+                    <p><strong>Client:</strong> Educational institutions in Upper Austria.</p>
+                    <p><strong>Description:</strong> Web application for admission applications to higher schools, including administration and assignment.</p>
+                    <p><strong>Programming Languages and Concepts:</strong> Java, Quarkus, Kubernetes.</p>
+                </div>
             </div>
         </section>
-        
-        <section class="team">
+
+        <section id="team" class="section">
             <h2>Team Structure and Size</h2>
             <p>Our current structure is a dynamic and flexible partnership of dedicated freelancers, embodying the principles of Agile methodology. Each team is composed of up to 5 highly skilled professionals who collaborate seamlessly to deliver exceptional results. We have established networks and resources that enable us to expand our team size and capabilities as required.</p>
         </section>
-        
-        <section class="geo">
+
+        <section id="geo" class="section bg-light">
             <h2>Geographical Presence</h2>
             <p>Our geographical presence is strategically centered in Austria, with a primary focus on Upper Austria and Salzburg. Upper Austria is characterized by a diverse array of industries, while Salzburg combines tourism, education, and innovative enterprises.</p>
         </section>
-        
-        <section class="market">
+
+        <section id="market" class="section">
             <h2>Market Opportunity</h2>
             <p>We have identified a broad market for Zoho products in Upper Austria, including manufacturing, SMEs, tech and innovation, education and research, tourism and hospitality, and healthcare sectors. Our extensive experience and technical expertise position us well to successfully promote and implement Zoho products in Austria.</p>
         </section>
     </div>
-    <footer>
-        <p>&copy; 2024 Donausoft. All Rights Reserved.</p>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">&copy; 2024 Donausoft. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
