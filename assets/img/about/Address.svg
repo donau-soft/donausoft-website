@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.14 28.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+        font-family: MontserratRoman-Regular, Montserrat;
+        font-size: 5.99px;
+        font-variation-settings: 'wght' 400;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(0 5.09)"><tspan x="0" y="0">David Klewein</tspan><tspan x="0" y="7.19">Linzer Straße 18</tspan><tspan x="0" y="14.37">4212 Neumarkt</tspan><tspan x="0" y="21.56">Austria</tspan></text>
+</svg>
