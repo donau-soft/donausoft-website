@@ -11339,6 +11339,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .my-image-link img {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
   display: block; /* Removes bottom space/gap under the image */
+  margin: auto;
 }
 
 .my-image-link:hover img {
