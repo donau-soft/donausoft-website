@@ -11335,3 +11335,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 .my-spacer1rem {
   margin-top: 3rem;
 }
+
+.my-image-link img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  display: block; /* Removes bottom space/gap under the image */
+}
+
+.my-image-link:hover img {
+  transform: scale(1.05); /* Scales the image up to 105% of its original size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+}
